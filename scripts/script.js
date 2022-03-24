@@ -39,7 +39,7 @@ btnS.onclick = function () {
     StampaListaPartecipanti();
 }
 
-function StampaListaPartecipanti() {  //completa la tabella con le info della classe
+function StampaListaPartecipanti() {  //completa la tabella con le info della classee
     const celId = document.getElementById('celId');
     celId.innerText = ListaPartecipanti[indice].id;
     const celNome = document.getElementById('celNome');
