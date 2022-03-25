@@ -12,13 +12,14 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link rel="stylesheet" href="mystyle/mystyle.css">
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            
             <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
                 <div class="container-fluid">
                     <ul class="navbar-nav">
@@ -46,41 +47,15 @@
                 <button id="btnS" type="button" class="btn btn-outline-info btn-lg"> Partecipante Successivo</button>
             </div>
             <div class="col-4">
-                <table class="table">
-                    <tr>
-                        <th><b>id:</b></th>
-                        <td id="celId"></td>
-                    </tr>
-                    <tr>
-                        <th><b>Nome:</b></th>
-                        <td id="celNome"></td>
-                    </tr>
-                    <tr>
-                        <th><b>Cognome:</b></th>
-                        <td id="celCognome"></td>
-                    </tr>
-                    <tr>
-                        <th><b>Data di Nascita:</b></th>
-                        <td id="celDataNascita"></td>
-                    </tr>
-                    <tr>
-                        <th><b>Email:</b></th>
-                        <td id="celEmail"></td>
-                    </tr>
-                    <tr>
-                        <th><b>Immagine:</b></th>
-                        <td id="celImmagine"></td>
-                    </tr>
-                </table>
+                <div class="d-grid">
+                    <button id="btn1" type="button" class="coloribtn btn btn-warning"></button>
+                </div>
+                <div id="lista" class="coloridiv"></div>
             </div>
-            <div class="col-4">
-                
-            </div>
-
+            <div class="col-4"></div>
         </div>
     </div>
     <script src="scripts/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </body>
 

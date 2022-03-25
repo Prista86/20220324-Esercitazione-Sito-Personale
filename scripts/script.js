@@ -9,7 +9,6 @@ class Partecipanti {        //creazione classe
     }
 }
 var indice = 0;
-
 const p1 = new Partecipanti(1,'Luca','Rossi','01.01.1981','aaa@gmail.com',"image/corgi1.jpg");
 const p2 = new Partecipanti(2,'Mario','Verdi','02.02.1982','bbb@gmail.com',"image/corgi2.jpg");
 const p3 = new Partecipanti(3,'Giacomo','Bianchi','03.03.1983','ccc@gmail.com',"image/corgi3.jpg");
@@ -28,7 +27,6 @@ btnP.onclick = function () {
     console.log(indice);
     StampaListaPartecipanti();
 }
-
 const btnS = document.getElementById('btnS');   //gestione bottone Precedente con incremento indicedddfd
 btnS.onclick = function () {
     indice++;
@@ -38,18 +36,22 @@ btnS.onclick = function () {
     console.log(indice);
     StampaListaPartecipanti();
 }
-
 function StampaListaPartecipanti() {  //completa la tabella con le info della classee
-    const celId = document.getElementById('celId');
-    celId.innerText = ListaPartecipanti[indice].id;
-    const celNome = document.getElementById('celNome');
-    celNome.innerText = ListaPartecipanti[indice].nome;
-    const celCognome = document.getElementById('celCognome');
-    celCognome.innerText = ListaPartecipanti[indice].cognome;
-    const celDataNascita = document.getElementById('celDataNascita');
-    celDataNascita.innerText = ListaPartecipanti[indice].datadinascita;
-    const celEmail = document.getElementById('celEmail');
-    celEmail.innerText = ListaPartecipanti[indice].email;
-    const celImmagine = document.getElementById('celImmagine');
-    celImmagine.innerHTML = `<img id="img1" src="${ListaPartecipanti[indice].immagine}" class="rounded mx-auto" alt="Torno Subito...">`
+    const btn1 = document.getElementById('btn1');
+    btn1.innerText= ListaPartecipanti[indice].nome;
+    const div = document.getElementById('lista');
+    div.innerHTML =`
+    <p>Nome : ${ListaPartecipanti[indice].nome} </p>
+    <p>ID: ${ListaPartecipanti[indice].id}</p>
+    <p>Cognome: ${ListaPartecipanti[indice].cognome}</p>
+    <p>Data di Nascita: ${ListaPartecipanti[indice].datadinascita}</p>
+    <p>Email: ${ListaPartecipanti[indice].email}</p>    
+    <p>Foto: </p><span><img id="img1" src="${ListaPartecipanti[indice].immagine}" class="rounded mx-auto center" alt="Torno Subito..."></span>
+    `    
 }
+$(document).ready(function(){
+    $('#btn1').click(function(){
+      $('#lista').slideToggle("slow");
+      
+    });
+});
