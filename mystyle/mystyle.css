@@ -45,14 +45,14 @@
     background-color: aquamarine;
     height: 300px;
     width: 300px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .b {
     background-color: aquamarine;
     height: 300px;
     width: 955px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .imgf {
@@ -61,4 +61,12 @@
     margin-right: auto;
     margin-top: 60px;
     width: 80%;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    margin: 30px;
 }
