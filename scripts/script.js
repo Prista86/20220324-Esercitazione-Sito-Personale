@@ -27,7 +27,7 @@ btnP.onclick = function() {
     console.log(indice);
     StampaListaPartecipanti();
 }
-const btnS = document.getElementById('btnS'); //gestione bottone Precedente con incremento indicedddfd
+const btnS = document.getElementById('btnS'); //gestione bottone Precedente con incremento indice
 btnS.onclick = function() {
     indice++;
     if (indice == 4) {
